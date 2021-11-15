@@ -3,8 +3,21 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
+  <GetUser />
+  <AddUser />
   <router-view />
 </template>
+
+<script>
+import GetUser from "@/components/GetUser.vue";
+import AddUser from "@/components/AddUser.vue";
+export default {
+  components: {
+    GetUser,
+    AddUser,
+  },
+};
+</script>
 
 <style>
 #app {
